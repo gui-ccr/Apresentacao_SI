@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Cinzel:wght@900&display=swap" rel="stylesheet">
     <style>
         :root {
             --dark-bg: #0c0a1a;
@@ -143,22 +143,44 @@
             opacity: 0;
             transition: opacity 0.5s;
         }
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
     </style>
 </head>
 <body>
     <canvas id="particle-canvas"></canvas>
     <div id="presenter-tag">Apresentador: <strong id="presenter-name"></strong></div>
 
-    <!-- INTRODUÇÃO GERAL -->
+    <!-- SLIDE DE INTRODUÇÃO NARRATIVA 1 -->
     <section class="section" data-presenter="Guilherme">
-        <div class="reveal">
-            <div class="mb-8">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mx-auto text-purple-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        <div class="w-full max-w-4xl">
+            <div class="reveal">
+                <svg class="mx-auto mb-8 text-purple-400 opacity-20" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M12 14c-4 0-8 2-8 4v1h16v-1c0-2-4-4-8-4z"></path><defs><filter id="blur-filter"><feGaussianBlur stdDeviation="1"></feGaussianBlur></filter></defs><g filter="url(#blur-filter)"></g></svg>
             </div>
-            <h2 class="text-5xl md:text-6xl font-bold mb-6">Para fazer algo diferente...</h2>
-            <p class="text-xl md:text-2xl max-w-3xl mx-auto text-subtle-text">Vamos contar uma história.</p>
+            <div class="reveal" style="transition-delay: 500ms;">
+                <p class="text-3xl md:text-4xl text-subtle-text mb-6">Você já se sentiu...</p>
+            </div>
+            <div class="reveal" style="transition-delay: 1800ms;">
+                <h2 class="text-6xl md:text-8xl font-bold text-light-text mb-12">...invisível?</h2>
+            </div>
+            <div class="reveal" style="transition-delay: 3000ms;">
+                 <p class="text-2xl md:text-3xl text-subtle-text">Um número... ou um nome?</p>
+            </div>
         </div>
-         <div class="scroll-down-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></div>
+        <div class="scroll-down-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></div>
+    </section>
+
+    <!-- NOVO SLIDE DE INTRODUÇÃO NARRATIVA 2 -->
+    <section class="section" data-presenter="Guilherme">
+        <div class="w-full max-w-5xl text-center">
+            <p class="reveal text-3xl md:text-4xl text-subtle-text" style="transition-delay: 500ms;">Hoje, nós vamos contar uma...</p>
+            <h2 class="reveal text-8xl md:text-9xl font-black tracking-widest uppercase text-purple-400 my-8 font-cinzel" style="transition-delay: 1500ms; text-shadow: 0 0 20px rgba(139, 92, 246, 0.6);">
+                HISTÓRIA
+            </h2>
+            <p class="reveal text-2xl md:text-3xl text-subtle-text" style="transition-delay: 2800ms;">...que todos nós já vivenciamos.</p>
+        </div>
+        <div class="scroll-down-indicator"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></div>
     </section>
 
     <!-- INTRODUÇÃO - HISTÓRIA DA ANA -->
@@ -306,14 +328,14 @@
                 <!-- Tableau -->
                 <div class="text-center reveal flex flex-col" style="transition-delay: 400ms;">
                     <div class="p-8 bg-gray-800/50 rounded-lg mb-4 flex-grow flex justify-center items-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Logo Tableau" class="max-h-20 object-contain" style="filter: invert(1);">
+                        <img src="https://logodownload.org/wp-content/uploads/2020/11/tableau-logo-1.png" alt="Logo Tableau" class="max-h-20 object-contain">
                     </div>
                     <h3 class="text-2xl font-bold">Tableau</h3>
                 </div>
                 <!-- Looker Studio -->
                 <div class="text-center reveal flex flex-col" style="transition-delay: 600ms;">
                     <div class="p-8 bg-gray-800/50 rounded-lg mb-4 flex-grow flex justify-center items-center">
-                        <img src="/images-removebg-preview.png" alt="Logo Looker Studio" class="max-h-24 object-contain">
+                        <img src="https://logodownload.org/wp-content/uploads/2022/11/looker-studio-logo-1.png" alt="Logo Looker Studio" class="max-h-24 object-contain">
                     </div>
                     <h3 class="text-2xl font-bold">Looker Studio</h3>
                 </div>
